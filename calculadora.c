@@ -4,7 +4,9 @@
 //função mmc
 int mmc(int n3, int n4) {
 
-    int resto, a, b;
+    int resto =0;
+    int a = 0;
+    int b = 0;
 
     a = n3;
     b = n4;
@@ -23,7 +25,7 @@ int mmc(int n3, int n4) {
 //função mdc
 int mdc(int n3, int n4) {
 
-    int resto;
+    int resto = 0;
 
     do {
         resto = n3 % n4;
@@ -63,7 +65,7 @@ int main()
 
 		if (opc == 0){
 			break;
-		  }else if(opc > 9){
+		  }else if(opc > 9 || opc < 0){
       
         printf("\nOpção inválida.\n");
       
